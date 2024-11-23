@@ -25,46 +25,46 @@ function setup() {
 
 	characterSkin = new Sprite();
 	characterSkin.collider = 's';
-	characterSkin.image = "skinColor0.PNG";
+	characterSkin.image = "/images/skinColor0.PNG";
 	characterSkin.image.scale = 0.4;
 
 	characterEye = new Sprite();
-	characterEye.image = "eyeColor0.PNG";
+	characterEye.image = "/images/eyeColor0.PNG";
 	characterEye.image.scale = 0.4;
 	characterEye.collider = 's';
 
 	characterShirt = new Sprite();
-	characterShirt.image = "shirtColor0.PNG";
+	characterShirt.image = "/images/shirtColor0.PNG";
 	characterShirt.image.scale = 0.4;
 	characterShirt.collider = 's';
 
 	characterPants = new Sprite();
-	characterPants.image = "pants0.PNG";
+	characterPants.image = "/images/pants0.PNG";
 	characterPants.image.scale = 0.4;
 	characterPants.collider = 's';
 
 	characterShoes = new Sprite();
-	characterShoes.image = "shoes0.PNG";
+	characterShoes.image = "/images/shoes0.PNG";
 	characterShoes.image.scale = 0.4;
 	characterShoes.collider = 's';
 
 	characterHair = new Sprite();
-	characterHair.image = "hair0.PNG";
+	characterHair.image = "/images/hair0.PNG";
 	characterHair.image.scale = 0.4;
 	characterHair.collider = 's';
 
 	characterFace = new Sprite();
-	characterFace.image = "face0.PNG";
+	characterFace.image = "/images/face0.PNG";
 	characterFace.image.scale = 0.4;
 	characterFace.collider = 's';
 
 	characterAccessory = new Sprite();
-	characterAccessory.image = "accessory0.PNG";
+	characterAccessory.image = "/images/accessory0.PNG";
 	characterAccessory.image.scale = 0.4;
 	characterAccessory.collider = 's';
 
 	characterBackground = new Sprite();
-	characterBackground.image = "background0.PNG";
+	characterBackground.image = "/images/background0.PNG";
 	characterBackground.image.scale = 0.4;
 	characterBackground.collider = 's';
 
@@ -117,31 +117,31 @@ function setup() {
 	strokeWeight(0);
 
 	
-	skinList = ["skinColor0.PNG", "skinColor1.PNG", "skinColor2.PNG", "skinColor3.PNG", "skinColor4.PNG"];
+	skinList = ["/images/skinColor0.PNG", "/images/skinColor1.PNG", "/images/skinColor2.PNG", "/images/skinColor3.PNG", "/images/skinColor4.PNG"];
 	skinNumber = 1;
 
-	eyeList = ["eyeColor0.PNG", "eyeColor1.PNG", "eyeColor2.PNG", "eyeColor3.PNG", "eyeColor4.PNG"];
+	eyeList = ["/images/eyeColor0.PNG", "/images/eyeColor1.PNG", "/images/eyeColor2.PNG", "/images/eyeColor3.PNG", "/images/eyeColor4.PNG"];
 	eyeNumber = 1;
 
-	shirtList = ["shirtColor0.PNG", "shirtColor1.PNG", "shirtColor2.PNG", "shirtColor3.PNG", "shirtColor4.PNG", "shirtColor5.PNG", "shirtColor6.PNG"];
+	shirtList = ["/images/shirtColor0.PNG", "/images/shirtColor1.PNG", "/images/shirtColor2.PNG", "/images/shirtColor3.PNG", "/images/shirtColor4.PNG", "/images/shirtColor5.PNG", "/images/shirtColor6.PNG"];
 	shirtNumber = 1;
 
-	pantsList = ["pants0.PNG", "pants1.PNG", "pants2.PNG", "pants3.PNG", "pants4.PNG"];
+	pantsList = ["/images/pants0.PNG", "/images/pants1.PNG", "/images/pants2.PNG", "/images/pants3.PNG", "/images/pants4.PNG"];
 	pantsNumber = 1;
 
-	shoesList = ["shoes0.PNG", "shoes1.PNG", "shoes2.PNG", "shoes3.PNG", "blank0.PNG"];
+	shoesList = ["/images/shoes0.PNG", "/images/shoes1.PNG", "/images/shoes2.PNG", "/images/shoes3.PNG", "/images/blank0.PNG"];
 	shoesNumber = 1;
 
-	hairList = ["hair0.PNG", "hair4.PNG", "hair2.PNG", "hair3.PNG", "hair1.PNG", "hair5.PNG", "blank0.PNG"];
+	hairList = ["/images/hair0.PNG", "/images/hair4.PNG", "/images/hair2.PNG", "/images/hair3.PNG", "/images/hair1.PNG", "/images/hair5.PNG", "/images/blank0.PNG"];
 	hairNumber = 1;
 
-	faceList = ["face0.PNG", "face1.PNG", "face2.PNG", "face3.PNG", "face4.PNG"];
+	faceList = ["/images/face0.PNG", "/images/face1.PNG", "/images/face2.PNG", "/images/face3.PNG", "/images/face4.PNG"];
 	faceNumber = 1;
 
-	accessoryList = ["blank0.PNG", "accessory0.PNG", "accessory1.PNG", "accessory2.PNG", "accessory3.PNG", "accessory4.PNG"];
+	accessoryList = ["/images/blank0.PNG", "/images/accessory0.PNG", "/images/accessory1.PNG", "/images/accessory2.PNG", "/images/accessory3.PNG", "/images/accessory4.PNG"];
 	accessoryNumber = 1;
 
-	backgroundList = ["background0.PNG", "background1.PNG", "background3.PNG", "background4.PNG", "blank0.PNG"];
+	backgroundList = ["/images/background0.PNG", "/images/background1.PNG", "/images/background3.PNG", "/images/background4.PNG", "/images/blank0.PNG"];
 	backgroundNumber = 1;
 
 	nameList = [];
