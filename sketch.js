@@ -15,7 +15,11 @@ let homeScreenText, homeScreenButton, nextButton;
 let a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z;
 
 function preload() {
-	font = loadFont('/assets/MotleyForces.ttf');
+	try {
+		font = loadFont('https://github-kwong09.github.io/character-maker/assets/MotleyForces.ttf');
+	} catch (e) {
+		console.log("error loading the font", e);
+	}
 }
 
 function setup() {
@@ -25,46 +29,46 @@ function setup() {
 
 	characterSkin = new Sprite();
 	characterSkin.collider = 's';
-	characterSkin.image = "/images/skinColor0.PNG";
+	characterSkin.image = "https://github-kwong09.github.io/character-maker/images/skinColor0.PNG";
 	characterSkin.image.scale = 0.4;
 
 	characterEye = new Sprite();
-	characterEye.image = "/images/eyeColor0.PNG";
+	characterEye.image = "https://github-kwong09.github.io/character-maker/images/eyeColor0.PNG";
 	characterEye.image.scale = 0.4;
 	characterEye.collider = 's';
 
 	characterShirt = new Sprite();
-	characterShirt.image = "/images/shirtColor0.PNG";
+	characterShirt.image = "https://github-kwong09.github.io/character-maker/images/shirtColor0.PNG";
 	characterShirt.image.scale = 0.4;
 	characterShirt.collider = 's';
 
 	characterPants = new Sprite();
-	characterPants.image = "/images/pants0.PNG";
+	characterPants.image = "https://github-kwong09.github.io/character-maker/images/pants0.PNG";
 	characterPants.image.scale = 0.4;
 	characterPants.collider = 's';
 
 	characterShoes = new Sprite();
-	characterShoes.image = "/images/shoes0.PNG";
+	characterShoes.image = "https://github-kwong09.github.io/character-maker/images/shoes0.PNG";
 	characterShoes.image.scale = 0.4;
 	characterShoes.collider = 's';
 
 	characterHair = new Sprite();
-	characterHair.image = "/images/hair0.PNG";
+	characterHair.image = "https://github-kwong09.github.io/character-maker/images/hair0.PNG";
 	characterHair.image.scale = 0.4;
 	characterHair.collider = 's';
 
 	characterFace = new Sprite();
-	characterFace.image = "/images/face0.PNG";
+	characterFace.image = "https://github-kwong09.github.io/character-maker/images/face0.PNG";
 	characterFace.image.scale = 0.4;
 	characterFace.collider = 's';
 
 	characterAccessory = new Sprite();
-	characterAccessory.image = "/images/accessory0.PNG";
+	characterAccessory.image = "https://github-kwong09.github.io/character-maker/images/accessory0.PNG";
 	characterAccessory.image.scale = 0.4;
 	characterAccessory.collider = 's';
 
 	characterBackground = new Sprite();
-	characterBackground.image = "/images/background0.PNG";
+	characterBackground.image = "https://github-kwong09.github.io/character-maker/images/background0.PNG";
 	characterBackground.image.scale = 0.4;
 	characterBackground.collider = 's';
 
@@ -117,31 +121,31 @@ function setup() {
 	strokeWeight(0);
 
 	
-	skinList = ["/images/skinColor0.PNG", "/images/skinColor1.PNG", "/images/skinColor2.PNG", "/images/skinColor3.PNG", "/images/skinColor4.PNG"];
+	skinList = ["https://github-kwong09.github.io/character-maker/images/skinColor0.PNG", "https://github-kwong09.github.io/character-maker/images/skinColor1.PNG", "https://github-kwong09.github.io/character-maker/images/skinColor2.PNG", "https://github-kwong09.github.io/character-maker/images/skinColor3.PNG", "https://github-kwong09.github.io/character-maker/images/skinColor4.PNG"];
 	skinNumber = 1;
 
-	eyeList = ["/images/eyeColor0.PNG", "/images/eyeColor1.PNG", "/images/eyeColor2.PNG", "/images/eyeColor3.PNG", "/images/eyeColor4.PNG"];
+	eyeList = ["https://github-kwong09.github.io/character-maker/images/eyeColor0.PNG", "https://github-kwong09.github.io/character-maker/images/eyeColor1.PNG", "https://github-kwong09.github.io/character-maker/images/eyeColor2.PNG", "https://github-kwong09.github.io/character-maker/images/eyeColor3.PNG", "https://github-kwong09.github.io/character-maker/images/eyeColor4.PNG"];
 	eyeNumber = 1;
 
-	shirtList = ["/images/shirtColor0.PNG", "/images/shirtColor1.PNG", "/images/shirtColor2.PNG", "/images/shirtColor3.PNG", "/images/shirtColor4.PNG", "/images/shirtColor5.PNG", "/images/shirtColor6.PNG"];
+	shirtList = ["https://github-kwong09.github.io/character-maker/images/shirtColor0.PNG", "https://github-kwong09.github.io/character-maker/images/shirtColor1.PNG", "https://github-kwong09.github.io/character-maker/images/shirtColor2.PNG", "https://github-kwong09.github.io/character-maker/images/shirtColor3.PNG", "https://github-kwong09.github.io/character-maker/images/shirtColor4.PNG", "https://github-kwong09.github.io/character-maker/images/shirtColor5.PNG", "https://github-kwong09.github.io/character-maker/images/shirtColor6.PNG"];
 	shirtNumber = 1;
 
-	pantsList = ["/images/pants0.PNG", "/images/pants1.PNG", "/images/pants2.PNG", "/images/pants3.PNG", "/images/pants4.PNG"];
+	pantsList = ["https://github-kwong09.github.io/character-maker/images/pants0.PNG", "https://github-kwong09.github.io/character-maker/images/pants1.PNG", "https://github-kwong09.github.io/character-maker/images/pants2.PNG", "https://github-kwong09.github.io/character-maker/images/pants3.PNG", "https://github-kwong09.github.io/character-maker/images/pants4.PNG"];
 	pantsNumber = 1;
 
-	shoesList = ["/images/shoes0.PNG", "/images/shoes1.PNG", "/images/shoes2.PNG", "/images/shoes3.PNG", "/images/blank0.PNG"];
+	shoesList = ["https://github-kwong09.github.io/character-maker/images/shoes0.PNG", "https://github-kwong09.github.io/character-maker/images/shoes1.PNG", "https://github-kwong09.github.io/character-maker/images/shoes2.PNG", "https://github-kwong09.github.io/character-maker/images/shoes3.PNG", "https://github-kwong09.github.io/character-maker/images/blank0.PNG"];
 	shoesNumber = 1;
 
-	hairList = ["/images/hair0.PNG", "/images/hair4.PNG", "/images/hair2.PNG", "/images/hair3.PNG", "/images/hair1.PNG", "/images/hair5.PNG", "/images/blank0.PNG"];
+	hairList = ["https://github-kwong09.github.io/character-maker/images/hair0.PNG", "https://github-kwong09.github.io/character-maker/images/hair4.PNG", "https://github-kwong09.github.io/character-maker/images/hair2.PNG", "https://github-kwong09.github.io/character-maker/images/hair3.PNG", "https://github-kwong09.github.io/character-maker/images/hair1.PNG", "https://github-kwong09.github.io/character-maker/images/hair5.PNG", "https://github-kwong09.github.io/character-maker/images/blank0.PNG"];
 	hairNumber = 1;
 
-	faceList = ["/images/face0.PNG", "/images/face1.PNG", "/images/face2.PNG", "/images/face3.PNG", "/images/face4.PNG"];
+	faceList = ["https://github-kwong09.github.io/character-maker/images/face0.PNG", "https://github-kwong09.github.io/character-maker/images/face1.PNG", "https://github-kwong09.github.io/character-maker/images/face2.PNG", "https://github-kwong09.github.io/character-maker/images/face3.PNG", "https://github-kwong09.github.io/character-maker/images/face4.PNG"];
 	faceNumber = 1;
 
-	accessoryList = ["/images/blank0.PNG", "/images/accessory0.PNG", "/images/accessory1.PNG", "/images/accessory2.PNG", "/images/accessory3.PNG", "/images/accessory4.PNG"];
+	accessoryList = ["https://github-kwong09.github.io/character-maker/images/blank0.PNG", "https://github-kwong09.github.io/character-maker/images/accessory0.PNG", "https://github-kwong09.github.io/character-maker/images/accessory1.PNG", "https://github-kwong09.github.io/character-maker/images/accessory2.PNG", "https://github-kwong09.github.io/character-maker/images/accessory3.PNG", "https://github-kwong09.github.io/character-maker/images/accessory4.PNG"];
 	accessoryNumber = 1;
 
-	backgroundList = ["/images/background0.PNG", "/images/background1.PNG", "/images/background3.PNG", "/images/background4.PNG", "/images/blank0.PNG"];
+	backgroundList = ["https://github-kwong09.github.io/character-maker/images/background0.PNG", "https://github-kwong09.github.io/character-maker/images/background1.PNG", "https://github-kwong09.github.io/character-maker/images/background3.PNG", "https://github-kwong09.github.io/character-maker/images/background4.PNG", "https://github-kwong09.github.io/character-maker/images/blank0.PNG"];
 	backgroundNumber = 1;
 
 	nameList = [];
