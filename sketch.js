@@ -136,7 +136,7 @@ function setup() {
 	shoesList = ["https://kwong09.github.io/character-maker/images/shoes0.PNG", "https://kwong09.github.io/character-maker/images/shoes1.PNG", "https://kwong09.github.io/character-maker/images/shoes2.PNG", "https://kwong09.github.io/character-maker/images/shoes3.PNG", "https://kwong09.github.io/character-maker/images/blank0.PNG"];
 	shoesNumber = 1;
 
-	hairList = ["https://kwong09.github.io/character-maker/images/hair0.PNG", "https://kwong09.github.io/character-maker/images/hair4.PNG", "https://kwong09.github.io/character-maker/images/hair2.PNG", "https://kwong09.github.io/character-maker/images/hair3.PNG", "https://kwong09.github.io/character-maker/images/hair1.PNG", "https://kwong09.github.io/character-maker/images/hair5.PNG", "https://kwong09.github.io/character-maker/images/blank0.PNG"];
+	hairList = ["https://kwong09.github.io/character-maker/images/hair0.PNG", "https://kwong09.github.io/character-maker/images/hair4.PNG", "https://kwong09.github.io/character-maker/images/hair2.PNG", "https://kwong09.github.io/character-maker/images/hair3.PNG", "https://kwong09.github.io/character-maker/images/hair5.PNG", "https://kwong09.github.io/character-maker/images/blank0.PNG"];
 	hairNumber = 1;
 
 	faceList = ["https://kwong09.github.io/character-maker/images/face0.PNG", "https://kwong09.github.io/character-maker/images/face1.PNG", "https://kwong09.github.io/character-maker/images/face2.PNG", "https://kwong09.github.io/character-maker/images/face3.PNG", "https://kwong09.github.io/character-maker/images/face4.PNG"];
@@ -544,7 +544,7 @@ function draw() {
 		}
 
 		if (hairButton.mouse.presses()) {
-			if (hairNumber <= 6) {
+			if (hairNumber <= 5) {
 				characterHair.image = hairList[hairNumber];
 				characterHair.image.scale = 0.4;
 				hairNumber += 1;
